@@ -1,0 +1,22 @@
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/assets/css/styles.css ***!
+  \*****************************************************************************/
+body {
+    background-color: #252525;
+    color: aliceblue;
+}
+
+#outerDiv {
+
+    width: 30%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainDiv{
+    border-style: solid;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

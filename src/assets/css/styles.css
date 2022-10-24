@@ -1,0 +1,24 @@
+body {
+    background-color: #252525;
+    color: aliceblue;
+}
+
+#outerDiv {
+    width:fit-content;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainDiv {
+    
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#arrayDiv {
+    margin-top: 10px;
+    padding-left: 49%;
+}
