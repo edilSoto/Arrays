@@ -12,9 +12,6 @@ const fieldSetRemove = document.querySelector('#removeItem');
 
 const referenceArray = [];
 const arrEmojis = ['💩', '👽', '🤖', '😸', '👹', '👾'];
-//const arrEmojis = [`0x1F480`, '0x1F383', '0x1F47B', '0x2B50', '0x1F525', '👾']; 
-
-let labelContent;
 
 let count = 0;
 
@@ -41,13 +38,7 @@ const adjustValues = (arr) => {
 
 pushButton.addEventListener('click', () => {
 
-    // labelContent =  arrayLabel.innerText.substring(0, arrayLabel.innerText.length - 1);
-
     (count === arrEmojis.length) ? count = 0 : '';
-
-    // (referenceArray.length === 0) ?
-    //     arrayLabel.innerText = `${labelContent}${(arrEmojis[count])}]` :
-    //     arrayLabel.innerText = `${labelContent}, ${(arrEmojis[count])}]`;
 
     referenceArray.push(arrEmojis[count]);
     arrayLabel.innerText = `[${referenceArray.join(', ')}]`;
@@ -56,13 +47,7 @@ pushButton.addEventListener('click', () => {
 
 unshiftButton.addEventListener('click', () => {
 
-    // labelContent = arrayLabel.innerText.substring(1, arrayLabel.innerText.length);
-
     (count === arrEmojis.length) ? count = 0 : '';
-
-    // (referenceArray.length === 0) ?
-    //     arrayLabel.innerText = `[${(arrEmojis[count])}${labelContent}` :
-    //     arrayLabel.innerText = `[${(arrEmojis[count])}, ${labelContent}`;
 
     referenceArray.unshift(arrEmojis[count]);
     arrayLabel.innerText = `[${referenceArray.join(', ')}]`;
